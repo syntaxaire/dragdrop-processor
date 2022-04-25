@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drag and Drop Example</title>
+    <style>
+        body {
+            font-family: helvetica;
+            font-weight: bold;
+        }
+        .droptarget {
+            border: 0.25em dashed;
+            border-radius: 1em;
+            border-color: CornflowerBlue;
+            background-color: Azure;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            padding: 5em;
+        }
+        .dropinprogress {
+            background-color: CornflowerBlue;
+        }
+    </style>
+</head>
+<body>
+<div id="droparea" class="droptarget">
+    <p><input type="file" id="fileselect" multiple onchange="handleFiles(this.files)"></p>
+    <p>Drop a file or files here for processing. If your browser does not support this, choose a file or files with the file dialog.</p>
+</div>
+<script src="dragdrop.js"></script>
+</body>
+</html>
