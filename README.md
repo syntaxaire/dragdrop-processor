@@ -8,7 +8,7 @@ it is easier for a user to understand and access.
 
 # Running
 ```
-python -m pip install pipenv 
+python -m pip install pipenv
 pipenv sync
-flask run
+pipenv run start
 ```
