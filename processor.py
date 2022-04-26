@@ -15,7 +15,7 @@ from werkzeug.utils import secure_filename
 log = logging.getLogger(__name__)
 
 
-def example(file: FileStorage) -> str:
+def example(file: FileStorage):
     """Accept a file and perform actions on it.
 
     Depending on the file's size, it may have already been written to a temp folder by Flask. These
